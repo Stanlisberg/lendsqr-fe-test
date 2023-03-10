@@ -1,11 +1,206 @@
-
-.container {
-    width: 1440px;
-    height: 700px;
-    background: black;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.login-left {
-    width: 736px;
-    height: 900px;
+body {
+  color: black;
+}
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.wrapper-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-wrap {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+  .lendsqr-logo {
+    width: 140.44px;
+    position: absolute;
+    left: 50px;
+    top: 90px;
+  }
+  .pablo-logo {
+    width: 580px;
+  }
+}
+
+.wrapper-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding-right: 30px;
+
+  .lendsqr-logo2 {
+    width: 135px;
+    position: absolute;
+    left: 120px;
+    top: 60px;
+    display: none;
+  }
+}
+
+.login-container {
+  text-align: start;
+  height: 100%;
+  width: 447px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.login-header {
+  position: absolute;
+  top: -70px;
+
+  .p-head {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -0.04em;
+    color: #213f7d;
+  }
+
+  .p-sub {
+    color: #545f7d;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    width: 194px;
+    height: 28px;
+  }
+}
+
+.login-input {
+  position: relative;
+  padding-top: 85px;
+
+
+  .input-email {
+    margin-top: -10px;
+  }
+
+  .input-password {
+    margin-top: 25px;
+    position: relative;
+
+    .show-pass {
+      position: absolute;
+      color: #39cdcc;
+      top: 14px;
+      left: 345px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .email,
+  .password {
+    width: 100%;
+    height: 50px;
+    color: #545f7d;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 5px;
+    padding-left: 15px;
+    opacity: 0.4;
+  }
+
+  .forgot-pass {
+    font-size: 12px;
+    color: #39cdcc;
+    font-weight: 600;
+    margin-top: 25px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    letter-spacing: 1px;
+  }
+
+  .forget-pass:hover {
+    color: #545f7d;
+  }
+}
+
+button {
+  background-color: #39cdcc;
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 30px;
+  border: 2px solid #39cdcc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 1030px) {
+  .wrapper {
+    grid-gap: 3em;
+  }
+
+  .wrapper-left {
+    .pablo-logo {
+      width: 500px;
+    }
+
+    .lendsqr-logo {
+      width: 120px;
+    }
+  }
+
+  .wrapper-right {
+    .login-container {
+      width: 400px;
+    }
+  }
+
+  .login-container {
+    width: 400px;
+  }
+
+  .login-header {
+    top: -50px;
+    .p-head {
+      font-weight: 650px;
+      font-size: 35px;
+    }
+    .p-sub {
+      font-weight: 300px;
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .wrapper-left {
+    display: none;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .wrapper-right {
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+  }
 }
