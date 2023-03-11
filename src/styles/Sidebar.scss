@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.sidebar {
+    flex: 1.7;
+    background:#ffffff;
+    box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+    // border-right: 1px solid rgba(0, 0, 0, 0.04);
+    min-height: 100vh;
+
+    .sidebar-top {
+        height: 50px;
+        padding: 20px;
+    
+        .logo {
+            width: 115.37px;
+            cursor:pointer;
+        }
+    }
+
+    .sidebar-wrap {
+        border-right: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+    .sidebar-center {
+
+            div {
+                display: flex;
+                align-items: center;
+                margin: 35px  0;
+                padding: 6px 20px;
+                
+                &:hover {
+                    background-color: #d7eeee;
+                    opacity: 0.8;
+                    cursor: pointer;
+                }
+
+                .icon {
+                    color: #213F7D;
+                    // padding-top: 20px;
+                }
+                span {
+                    font-family: 'Work Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    padding-left: 8px;
+                    // padding-top: 20px;
+                    color: #213F7D
+                }    
+            }
+
+            .dash {
+                margin-top: 50px;
+            }
+    }
+
+    .sidebar-bottom {
+        div {
+            margin: 0;
+            padding: 0;
+
+            .title {
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                color: #545F7D;
+                margin-top: 15px;
+                margin-bottom: 5px;
+                padding: 6px 20px;
+                text-transform: uppercase;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                margin: 10px  0;
+                padding: 6px 20px;
+                
+                &:hover {
+                    // background-color:#d4eaea;
+                    background-color: #d7eeee;
+                    opacity: 0.8;
+                    cursor: pointer;
+                    
+                }
+
+                .icon {
+                    color: #213F7D;
+                    // padding-top: 20px;
+                }
+                span {
+                    font-family: 'Work Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    padding-left: 8px;
+                    // padding-top: 20px;
+                    color: #213F7D
+                }    
+            }
+        }
+    }
+
+    hr {
+        margin-top: 25px;
+        box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+        border: 0.5px solid rgba(0, 0, 0, 0.04);
+    }
+}
