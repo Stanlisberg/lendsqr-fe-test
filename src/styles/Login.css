@@ -27,12 +27,12 @@ body {
   justify-content: center;
 }
 .wrap-logo .lendsqr-logo {
-  width: 140.44px;
+  width: 160.44px;
   position: absolute;
-  top:69px;
-  left:50px;
+  left: 31px;
+  top: 90px;
 }
-.logo-wrap .pablo-logo {
+.wrap-logo .pablo-logo {
   width: 580px;
 }
 
@@ -113,7 +113,7 @@ body {
   padding-left: 15px;
   opacity: 0.4;
 }
-.login-input .forget-pass {
+.login-input .forgot-pass {
   font-size: 12px;
   color: #39cdcc;
   font-weight: 600;
@@ -122,7 +122,7 @@ body {
   cursor: pointer;
   letter-spacing: 1px;
 }
-.login-input .forget-pass:hover {
+.login-input .forgot-pass:hover {
   color: #545f7d;
 }
 

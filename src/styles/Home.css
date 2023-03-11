@@ -1,0 +1,7 @@
+.home {
+  display: flex;
+}
+.home .home-component {
+  flex: 6;
+  padding: 20px;
+}/*# sourceMappingURL=Home.css.map */

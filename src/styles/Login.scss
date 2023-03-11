@@ -20,16 +20,16 @@ body {
   align-items: center;
 }
 
-.logo-wrap {
+.wrap-logo {
   position: relative;
   height: 100%;
   display: flex;
   justify-content: center;
 
   .lendsqr-logo {
-    width: 140.44px;
+    width: 160.44px;
     position: absolute;
-    left: 50px;
+    left: 31px;
     top: 90px;
   }
   .pablo-logo {
@@ -132,7 +132,7 @@ body {
     letter-spacing: 1px;
   }
 
-  .forget-pass:hover {
+  .forgot-pass:hover {
     color: #545f7d;
   }
 }

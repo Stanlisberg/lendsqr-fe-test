@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.sidebar {
+  flex: 1.7;
+  background: #ffffff;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+  min-height: 100vh;
+}
+.sidebar .sidebar-top {
+  height: 50px;
+  padding: 20px;
+}
+.sidebar .sidebar-top .logo {
+  width: 115.37px;
+  cursor: pointer;
+}
+.sidebar .sidebar-wrap {
+  border-right: 1px solid rgba(0, 0, 0, 0.04);
+}
+.sidebar .sidebar-center div {
+  display: flex;
+  align-items: center;
+  margin: 35px 0;
+  padding: 6px 20px;
+}
+.sidebar .sidebar-center div:hover {
+  background-color: #d7eeee;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.sidebar .sidebar-center div .icon {
+  color: #213F7D;
+}
+.sidebar .sidebar-center div span {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 8px;
+  color: #213F7D;
+}
+.sidebar .sidebar-center .dash {
+  margin-top: 50px;
+}
+.sidebar .sidebar-bottom div {
+  margin: 0;
+  padding: 0;
+}
+.sidebar .sidebar-bottom div .title {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #545F7D;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 6px 20px;
+  text-transform: uppercase;
+}
+.sidebar .sidebar-bottom div div {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 6px 20px;
+}
+.sidebar .sidebar-bottom div div:hover {
+  background-color: #d7eeee;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.sidebar .sidebar-bottom div div .icon {
+  color: #213F7D;
+}
+.sidebar .sidebar-bottom div div span {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 8px;
+  color: #213F7D;
+}
+.sidebar hr {
+  margin-top: 25px;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
+}/*# sourceMappingURL=Sidebar.css.map */
