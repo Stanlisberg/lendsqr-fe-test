@@ -1,1 +1,82 @@
-/*# sourceMappingURL=Navbar.css.map */
+.nav-component {
+  position: relative;
+}
+.nav-component .navbar {
+  height: 90px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
+  border-left: 0px;
+  position: fixed;
+  width: 100%;
+}
+.nav-component .navbar .nav-container {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+.nav-component .navbar .nav-container .logo-div {
+  flex: 1.6;
+}
+.nav-component .navbar .nav-container .logo-div .logo {
+  width: 130.37px;
+  cursor: pointer;
+  margin: 28px 20px;
+}
+.nav-component .navbar .nav-container .input-container {
+  flex: 6;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-component .navbar .nav-container .input-container .input-wrapper {
+  display: flex;
+  position: relative;
+}
+.nav-component .navbar .nav-container .input-container .input-wrapper .input-div {
+  margin: 25px 0;
+  margin-left: 60px;
+  background: #ffffff;
+  opacity: 0.2;
+  border: 1px solid #213f7d;
+  border-radius: 8px;
+  width: 400px;
+  height: 40px;
+  border-right: none;
+}
+.nav-component .navbar .nav-container .input-container .input-wrapper .input-div .input {
+  outline: none;
+  width: 98%;
+  height: 100%;
+  border: none;
+  padding: 3px 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 5px;
+}
+.nav-component .navbar .nav-container .input-container .input-wrapper .search-icon-div {
+  margin: 25px 0;
+  background: #39cdcc;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: absolute;
+  top: 0px;
+  left: 405px;
+  height: 40px;
+  width: 3.5em;
+}
+.nav-component .navbar .nav-container .input-container .input-wrapper .search-icon-div .search-icon {
+  margin: 12px 20px;
+  cursor: pointer;
+}
+.nav-component .navbar .nav-container .input-container .icon-div {
+  display: flex;
+  border: 1px solid purple;
+  margin-right: 3em;
+  align-items: center;
+  padding: 0 10px;
+  width: 30%;
+}/*# sourceMappingURL=Navbar.css.map */

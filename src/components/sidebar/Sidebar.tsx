@@ -22,12 +22,8 @@ import { AiOutlineBarChart } from 'react-icons/ai'
 function Sidebar() {
   return (
     <div className='sidebar'>
-      <div className='sidebar-top'>
-          <img className='logo' src={pablo}></img>
-      </div>
-      <hr />
       <div className='sidebar-wrap'>
-        <div className='sidebar-center'>
+        <div className='sidebar-top'>
             <div>
               <FaBriefcase size='18' className='icon'/>
               <span>Switch Organization</span>
@@ -38,7 +34,7 @@ function Sidebar() {
               <span>Dashboard</span>
             </div>
         </div>
-        <div className='sidebar-bottom'>
+        <div className='sidebar-center'>
           <div> 
             <p className='title'>Customers</p>
             <div>

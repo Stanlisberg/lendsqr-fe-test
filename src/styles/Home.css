@@ -1,7 +1,6 @@
-.home {
+.home .home-wrapper {
   display: flex;
 }
-.home .home-component {
+.home .home-wrapper .home-component {
   flex: 6;
-  padding: 20px;
 }/*# sourceMappingURL=Home.css.map */

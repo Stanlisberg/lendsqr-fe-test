@@ -1,7 +1,8 @@
 .home {
-    display: flex;
-    .home-component {
-        flex: 6;
-        padding: 20px;
+    .home-wrapper {
+         display: flex;
+         .home-component {
+            flex:6;
+         }
     }
 }
