@@ -1,11 +1,14 @@
 import React from "react";
 import "../../styles/Navbar.css";
 import pablo from "../../icons/lendsqr.svg";
+import image from '../../icons/img.jpg'
 import { BiSearch } from "react-icons/bi";
-import { RxBell } from "react-icons/rx";
-import { MdKeyboardArrowDown } from "react-icons/md";
+// import { RxBell } from "react-icons/rx";
+import {ReactComponent as Bell} from '../../assets/svg/bell.svg'
+import {ReactComponent as Arrow} from '../../assets/svg/arrow.svg'
 
 function Navbar() {
+
   return (
     <div className="nav-component">
       <div className="navbar">
@@ -27,20 +30,21 @@ function Navbar() {
               </div>
             </div>
             <div className="icon-div">
-              <div className='icon'>
+              <div className='icon one'>
                  Docs
               </div>
-              <div className='icon'>
-                <RxBell />
+              <div className='icon two'>
+                {/* <RxBell size='20'/> */}
+                <Bell />
               </div>
-              <div className='icon'>
-                <img src="" alt="" />
+              <div className=' icon three'>
+                <img src={image} alt="" />
               </div>
-              <div className='icon'>
+              <div className=' icon four'>
                  Adedeji
               </div>
-              <div className='icon'>
-                <MdKeyboardArrowDown />
+              <div className=' icon five'>
+                <Arrow />
               </div>
             </div>
           </div>

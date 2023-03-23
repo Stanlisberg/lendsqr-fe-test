@@ -5,6 +5,7 @@
   box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
   min-height: 100vh;
   margin-top: 80px;
+  font-family: "Work Sans";
 }
 .sidebar .sidebar-wrap {
   border-right: 1px solid rgba(0, 0, 0, 0.04);
@@ -74,6 +75,8 @@
   line-height: 19px;
   padding-left: 8px;
   color: #213F7D;
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
 }
 .sidebar hr {
   margin-top: 25px;

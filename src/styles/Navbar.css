@@ -40,22 +40,29 @@
   margin-left: 60px;
   background: #ffffff;
   opacity: 0.2;
-  border: 1px solid #213f7d;
+  border: 2px solid #213f7d;
   border-radius: 8px;
   width: 400px;
   height: 40px;
   border-right: none;
 }
-.nav-component .navbar .nav-container .input-container .input-wrapper .input-div .input {
+.nav-component .navbar .nav-container .input-container .input-wrapper .input-div input {
   outline: none;
   width: 98%;
   height: 100%;
   border: none;
   padding: 3px 15px;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 15px;
   line-height: 16px;
   margin-left: 5px;
+  color: #545f7d;
+}
+.nav-component .navbar .nav-container .input-container .input-wrapper .input-div input::-moz-placeholder {
+  color: #545f7d;
+}
+.nav-component .navbar .nav-container .input-container .input-wrapper .input-div input::placeholder {
+  color: #545f7d;
 }
 .nav-component .navbar .nav-container .input-container .input-wrapper .search-icon-div {
   margin: 25px 0;
@@ -74,9 +81,36 @@
 }
 .nav-component .navbar .nav-container .input-container .icon-div {
   display: flex;
-  border: 1px solid purple;
-  margin-right: 3em;
+  margin-right: 0.5em;
+  justify-content: center;
   align-items: center;
   padding: 0 10px;
-  width: 30%;
+  width: 35%;
+  position: relative;
+}
+.nav-component .navbar .nav-container .input-container .icon-div .one {
+  text-decoration: underline;
+  font-weight: 400;
+  cursor: pointer;
+}
+.nav-component .navbar .nav-container .input-container .icon-div .four {
+  margin-left: -20px;
+}
+.nav-component .navbar .nav-container .input-container .icon-div .five {
+  margin-bottom: 5px;
+  cursor: pointer;
+  margin-left: -20px;
+}
+.nav-component .navbar .nav-container .input-container .icon-div .icon {
+  padding: 0px 10px;
+  margin-right: 10px;
+  color: #213f7d;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.nav-component .navbar .nav-container .input-container .icon-div .icon img {
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
 }/*# sourceMappingURL=Navbar.css.map */

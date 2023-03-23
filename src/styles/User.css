@@ -1,0 +1,13 @@
+.user .user-wrapper {
+  display: flex;
+}
+.user .user-wrapper .user-component {
+  flex: 6;
+  color: #213F7D;
+  padding-top: 10em;
+}
+.user .user-wrapper .user-component .widget {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}/*# sourceMappingURL=User.css.map */

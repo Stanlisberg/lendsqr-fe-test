@@ -7,6 +7,7 @@
     // border-right: 1px solid rgba(0, 0, 0, 0.04);
     min-height: 100vh;
     margin-top: 80px;
+    font-family: 'Work Sans';
 
     .sidebar-wrap {
         border-right: 1px solid rgba(0, 0, 0, 0.04);
@@ -92,7 +93,8 @@
                     line-height: 19px;
                     padding-left: 8px;
                     // padding-top: 20px;
-                    color: #213F7D
+                    color: #213F7D;
+                    text-decoration: dotted;
                 }    
             }
         }
