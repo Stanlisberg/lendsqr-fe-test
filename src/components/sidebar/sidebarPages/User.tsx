@@ -11,11 +11,11 @@ function User() {
         <div className="user-wrapper">
           <Sidebar />
           <div className="user-component">
-            <div className='widget'>
-              <Widget />
-              <Widget />
-              <Widget />
-              <Widget />
+            <div className='wid-wrap'>
+              <Widget item='user'/>
+              <Widget item='activeUsers'/>
+              <Widget item='usersWithLoans'/>
+              <Widget item='usersWithSavings'/>
             </div>
           </div>
         </div>

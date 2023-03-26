@@ -1,6 +1,11 @@
 .widget {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     flex: 1;
-    padding: 10px;
+    padding: 20px;
+    height: 130px;
+    background: #FFFFFF;
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    border-radius: 4px;
 }

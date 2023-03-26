@@ -4,8 +4,8 @@ import pablo from "../../icons/lendsqr.svg";
 import image from '../../icons/img.jpg'
 import { BiSearch } from "react-icons/bi";
 // import { RxBell } from "react-icons/rx";
-import {ReactComponent as Bell} from '../../assets/svg/bell.svg'
-import {ReactComponent as Arrow} from '../../assets/svg/arrow.svg'
+import {ReactComponent as Bell} from '../../assets/navbarSvg/bell.svg'
+import {ReactComponent as Arrow} from '../../assets/navbarSvg/arrow.svg'
 
 function Navbar() {
 
