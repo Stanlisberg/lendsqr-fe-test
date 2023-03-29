@@ -1,9 +1,33 @@
+.svg {
+  width: 30px;
+  height: 30px;
+}
+
 .widget {
   flex: 1;
   padding: 20px;
-  height: 130px;
+  height: 125px;
+  width: 150px;
   background: #FFFFFF;
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   border: 1px solid rgba(33, 63, 125, 0.06);
   border-radius: 4px;
+}
+.widget .title {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-top: 7px;
+}
+.widget .amount {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20x;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-top: 5px;
 }/*# sourceMappingURL=Widget.css.map */
