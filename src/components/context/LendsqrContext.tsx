@@ -25,7 +25,7 @@ export const LendsqrProvider = ({ children }: LendsqrProviderProp) => {
       "https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users"
     );
 
-    const userResponse = response.data.slice(0, 9)
+    const userResponse = response.data
     setUser(userResponse);
     
   };
