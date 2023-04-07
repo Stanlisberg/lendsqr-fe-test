@@ -7,11 +7,9 @@
   flex: 1;
   padding: 20px;
   height: 125px;
-  max-width: 190px;
   margin: 0 auto 0 auto;
   background: #FFFFFF;
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
-  border: 1px solid brown;
   border-radius: 4px;
 }
 .widget .title {

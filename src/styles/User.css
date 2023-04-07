@@ -19,10 +19,9 @@
   margin-right: auto;
 }
 .user .user-wrapper .user-component .wid-wrap .wid-cont {
-  border: 1px solid red;
   display: flex;
   padding: 60px 0 60px 0;
-  gap: 1px;
+  gap: 28px;
 }
 .user .user-wrapper .user-component .table-container {
   margin-left: auto;
