@@ -11,6 +11,21 @@
       padding-top: 5em;
       background: #fbfbfb;
 
+      .user-text {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #213F7D;
+        // border: 1px solid green;
+        max-width: 1010px;
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+      }
+
       .wid-wrap {
         // display: flex;
         // padding: 60px;
@@ -18,13 +33,14 @@
         // border: 1px solid black;
         padding:0 60px 0 60px;
         max-width: 1010px;
-        margin-left: auto;
-        margin-right: auto;
+        // margin-left: auto;
+        // margin-right: auto;
+        margin: 0 auto 0 auto;
 
         .wid-cont {
           // border: 1px solid red;
           display: flex;
-          padding: 60px 0 60px 0;
+          padding: 30px 0 60px 0;
           gap: 28px;
         }
       }
@@ -41,7 +57,8 @@
         // border: 1px solid rgba(33, 63, 125, 0.06);
         // padding-left: 40px;
         // padding-right: 40px;
-        padding:0 60px 0 60px;
+           margin-top: -25px;
+        padding:0 50px 0 60px;
 
         .table-wrapper{
           // border: 1px solid blue;
@@ -98,7 +115,7 @@
       .table {
         width: 800px;
         border-collapse: collapse;
-        margin: 40px 20px 30px 20px;
+        margin: 25px 25px 14px 25px;
 
         .t-head {
           text-align: center;

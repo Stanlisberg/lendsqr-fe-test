@@ -12,15 +12,27 @@
   padding-top: 5em;
   background: #fbfbfb;
 }
+.user .user-wrapper .user-component .user-text {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #213F7D;
+  max-width: 1010px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
 .user .user-wrapper .user-component .wid-wrap {
   padding: 0 60px 0 60px;
   max-width: 1010px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
 }
 .user .user-wrapper .user-component .wid-wrap .wid-cont {
   display: flex;
-  padding: 60px 0 60px 0;
+  padding: 30px 0 60px 0;
   gap: 28px;
 }
 .user .user-wrapper .user-component .table-container {
@@ -29,7 +41,8 @@
   max-width: 1010px;
   height: auto;
   overflow-x: auto;
-  padding: 0 60px 0 60px;
+  margin-top: -25px;
+  padding: 0 50px 0 60px;
 }
 .user .user-wrapper .user-component .table-container .table-wrapper {
   margin-left: auto;
@@ -77,7 +90,7 @@
 .user .user-wrapper .user-component .table {
   width: 800px;
   border-collapse: collapse;
-  margin: 40px 20px 30px 20px;
+  margin: 25px 25px 14px 25px;
 }
 .user .user-wrapper .user-component .table .t-head {
   text-align: center;
