@@ -102,7 +102,7 @@ function User() {
                 {(currentItems as unknown as any[])?.map((item) => (
                   <tr className="t-row-body" key={item.id}>
                     <td className="table-data">{item?.orgName.slice(0, 15)}</td>
-                    <td className="table-data">
+                    <td className="table-data user-trans">
                       <Link to={`/user/${item.id}`} className='link'>{item?.userName}</Link>
                     </td>
                     <td className="table-data">{item?.email}</td>

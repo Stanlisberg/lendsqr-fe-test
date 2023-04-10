@@ -130,8 +130,20 @@
 .user .user-wrapper .user-component .table .t-body .t-row-body:last-child {
   border-bottom: none;
 }
+.user .user-wrapper .user-component .table .t-body .t-row-body .user-trans:hover {
+  transform: scale(0.97);
+}
 .user .user-wrapper .user-component .table .t-body .t-row-body .table-data {
   padding: 3px 25px 3px 0;
+  -webkit-text-decoration: double;
+          text-decoration: double;
+}
+.user .user-wrapper .user-component .table .t-body .t-row-body .table-data .link {
+  text-decoration: none;
+  color: #213f7d;
+}
+.user .user-wrapper .user-component .table .t-body .t-row-body .table-data .link:hover {
+  color: #39cdcc;
 }
 .user .user-wrapper .user-component .table .t-body .t-row-body .dot {
   margin-top: 13px;
