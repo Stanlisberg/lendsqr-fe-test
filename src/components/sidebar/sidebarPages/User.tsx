@@ -1,4 +1,5 @@
 import { useContext, useEffect, useState} from "react";
+import { Link } from 'react-router-dom';
 import Navbar from "../../navbar/Navbar";
 import Sidebar from "../Sidebar";
 import Widget from "../../../widget/Widget";
@@ -101,7 +102,9 @@ function User() {
                 {(currentItems as unknown as any[])?.map((item) => (
                   <tr className="t-row-body" key={item.id}>
                     <td className="table-data">{item?.orgName.slice(0, 15)}</td>
-                    <td className="table-data">{item?.userName}</td>
+                    <td className="table-data">
+                      <Link to={`/user/${item.id}`} className='link'>{item?.userName}</Link>
+                    </td>
                     <td className="table-data">{item?.email}</td>
                     <td className="table-data">
                       {item?.phoneNumber.slice(0, 15)}

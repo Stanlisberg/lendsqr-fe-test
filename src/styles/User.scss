@@ -162,6 +162,11 @@
 
             .table-data {
               padding: 3px 25px 3px 0;
+              text-decoration: double;
+
+              .link {
+                color:red;
+              }
             }
 
             .dot {
