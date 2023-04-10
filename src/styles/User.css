@@ -43,6 +43,7 @@
   overflow-x: auto;
   margin-top: -25px;
   padding: 0 50px 0 60px;
+  border: 1px solid blue;
 }
 .user .user-wrapper .user-component .table-container .table-wrapper {
   margin-left: auto;
