@@ -19,7 +19,7 @@ type LendsqrContextType = {
   setUser: React.Dispatch<React.SetStateAction<LendsqrStateType | null>>
   setUserDetails:  React.Dispatch<React.SetStateAction<LendsqrStateType2 | null>>
   getUsers: () => void
-  getUserDetails: () => void
+  getUserDetails: (url: string) => void
 };
 
 
@@ -40,24 +40,14 @@ export const LendsqrProvider = ({ children }: LendsqrProviderProp) => {
     
   };
 
-  // const getUserDetails = async (url) => {
-  //   const response = await axios.get(url);
-    
-  //   const userResponse = response.data;
-  //   setUserDetails(userResponse);
-  // }
+  const getUserDetails = async (url: string) => {
+    const response = await axios.get(url);
+    const userResponse = response.data;
 
-  const getUserDetails = (url: string ) => {
-    fetch(url)
-    .then((response) => {
-      response.json()
-    })
-    .then((data) => {
-      console.log(data)
-    })
+    setUserDetails(userResponse);
   }
 
-  
+
   return (
     <LendsqrContext.Provider
       value={{
