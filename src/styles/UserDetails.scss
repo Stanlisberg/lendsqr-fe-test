@@ -1,4 +1,25 @@
 .details-component {
-    max-width: 1200px;
+    max-width: 990px;
     border: 1px solid red;
+    margin: 0 auto 0 auto;
+    padding: 0 50px 0 50px;
+
+    .first-column {
+        border: 1px solid blue;
+
+        .first-row {
+            display:flex;
+            align-items: center;
+
+            .back{
+                padding-left: 10px;
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #545F7D;
+            }
+        }
+    }
 }

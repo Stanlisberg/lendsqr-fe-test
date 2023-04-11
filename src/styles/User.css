@@ -19,15 +19,15 @@
   font-size: 24px;
   line-height: 28px;
   color: #213F7D;
-  max-width: 1010px;
-  padding-left: 60px;
-  padding-right: 60px;
-  margin-top: -10px;
-  margin-bottom: 10px;
+  border: 1px solid green;
+  max-width: 990px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: -10px auto 10px auto;
 }
 .user .user-wrapper .user-component .wid-wrap {
-  padding: 0 60px 0 60px;
-  max-width: 1010px;
+  padding: 0 50px 0 50px;
+  max-width: 990px;
   margin: 0 auto 0 auto;
 }
 .user .user-wrapper .user-component .wid-wrap .wid-cont {
@@ -38,11 +38,11 @@
 .user .user-wrapper .user-component .table-container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1010px;
+  max-width: 990px;
   height: auto;
   overflow-x: auto;
   margin-top: -25px;
-  padding: 0 60px 0 60px;
+  padding: 0 50px 0 50px;
   border: 1px solid blue;
 }
 .user .user-wrapper .user-component .table-container .table-wrapper {
