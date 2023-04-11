@@ -4,14 +4,14 @@
   margin: 0 auto 0 auto;
   padding: 0 50px 0 50px;
 }
-.details-component .first-column {
+.details-component .first-segment {
   border: 1px solid blue;
 }
-.details-component .first-column .first-row {
+.details-component .first-segment .first-row {
   display: flex;
   align-items: center;
 }
-.details-component .first-column .first-row .back {
+.details-component .first-segment .first-row .back-text {
   padding-left: 10px;
   font-family: "Work Sans";
   font-style: normal;
@@ -19,4 +19,53 @@
   font-size: 16px;
   line-height: 19px;
   color: #545F7D;
+}
+.details-component .first-segment .second-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.details-component .first-segment .second-row .user-details-text {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #213F7D;
+}
+.details-component .first-segment .second-row .black-active-div {
+  display: flex;
+}
+.details-component .first-segment .second-row .black-active-div .blacklist {
+  border: 1px solid #E4033B;
+  border-radius: 5px;
+  margin-right: 20px;
+  padding: 8px 13px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #E4033B;
+}
+.details-component .first-segment .second-row .black-active-div .activate-user {
+  border: 1px solid #39cdcc;
+  border-radius: 5px;
+  padding: 8px 13px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #39cdcc;
+}
+.details-component .second-segment {
+  border: 1px solid brown;
+  margin-top: 40px;
 }/*# sourceMappingURL=UserDetails.css.map */

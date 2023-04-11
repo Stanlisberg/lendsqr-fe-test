@@ -26,20 +26,21 @@ function UserDetails() {
         <Sidebar />
         <div className="user-component">
           <div className="details-component">
-            <div className="first-column">
+            <div className="first-segment">
               <div className="first-row">
                 <LessThan />
-                <p className='back'>Back to Users</p>
+                <p className='back-text'>Back to Users</p>
               </div>
-              <div className="second row">
-                <p>User Details</p>
-                <div>
-                  <div>Blacklist user</div>
-                  <div>Active user</div>
+              <div className="second-row">
+                <p className='user-details-text'>User Details</p>
+                <div className='black-active-div'>
+                  <div className='blacklist'>Blacklist user</div>
+                  <div className='activate-user'>Activate user</div>
                 </div>
               </div>
-              <div className="third-row">
-                <div className="third-row-wrapper">
+            </div>
+            <div className='second-segment'>
+                <div className="first-row-wrapper">
                   <div className="first-div"></div>
                   <div className="second-div">
                     <p> Frank Morrison</p>
@@ -54,15 +55,90 @@ function UserDetails() {
                     <p>providus bank</p>
                   </div>
                 </div>
-              </div>
+                <div className="second-row-wrapper">
+                  <div>General Details</div>
+                  <div>Documents</div>
+                  <div>Bank Details</div>
+                  <div>Loans</div>
+                  <div>Savings</div>
+                  <div>App and System</div>
+                </div>
             </div>
-            <div className="second-column">
-              <div>General Details</div>
-              <div>Documents</div>
-              <div>Bank Details</div>
-              <div>Loans</div>
-              <div>Savings</div>
-              <div>App and System</div>
+            <div className='third-segment'>
+              <div className='first-row-wrapper'>
+                <h4>Personal Infomation</h4>
+                <div className='first-row-wrapper1'>
+                  <div>
+                    <p>Fullname</p>
+                    <p></p>
+                  </div>
+                  <div>
+                    <p>Fullname</p>
+                    <p></p>
+                  </div>
+                  <div>
+                    <p>Fullname</p>
+                    <p></p>
+                  </div>
+                  <div>
+                    <p>Fullname</p>
+                    <p></p>
+                  </div>
+                  <div>
+                    <p>Fullname</p>
+                    <p></p>
+                  </div>
+                </div>
+                <div className='first-row-wrapper2'>
+                 <h4>Education and Employment</h4>
+                 <div>
+                    <p>Fullname</p>
+                    <p></p>
+                  </div>
+                  <div>
+                    <p>Fullname</p>
+                    <p></p>
+                  </div>
+                  <div>
+                    <p>Fullname</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+              <div className='second-row-wrapper'>
+                <h4>Socials</h4>
+                <div>
+                  <p>Twitter</p>
+                  <p></p>
+                </div>
+                <div>
+                  <p>Facebook</p>
+                  <p></p>
+                </div>
+                <div>
+                  <p>instagram</p>
+                  <p></p>
+                </div>
+              </div>
+              <div className='third-row-wrapper'>
+                <h4>Guarantor</h4>
+                <div>
+                  <p>Fullname</p>
+                  <p></p>
+                </div>
+                <div>
+                  <p>Phone number</p>
+                  <p></p>
+                </div>
+                <div>
+                  <p>Email Address</p>
+                  <p></p>
+                </div>
+                <div>
+                  <p>Relationship</p>
+                  <p></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
