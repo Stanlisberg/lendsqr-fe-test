@@ -10,7 +10,8 @@ export type LendsqrStateType = {
 };
 
 type LendsqrStateType2 = {
-  info: []
+  profile: {};
+  avatar: string
 }
 
 type LendsqrContextType = {
@@ -45,6 +46,8 @@ export const LendsqrProvider = ({ children }: LendsqrProviderProp) => {
     const userResponse = response.data;
 
     setUserDetails(userResponse);
+
+    console.log(userResponse.data)
   }
 
 

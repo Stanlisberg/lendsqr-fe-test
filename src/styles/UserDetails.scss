@@ -1,3 +1,4 @@
+
 .details-component {
     max-width: 990px;
     border: 1px solid red;
@@ -77,6 +78,27 @@
     .second-segment {
         border: 1px solid brown;
         margin-top: 40px;
+
+        .first-row-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .first-row-wrapper {
+            margin-top: 20px;
+            border: 1px solid red;
+            padding: 0 25px;
+
+            img{
+                border-radius: 50%;
+                width:80px;
+                height: 80px;
+                // border: 2px solid #545F7D;
+                border: 2px solid #213F7D;
+                box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+                object-fit:contain;
+            }
+        }
     }
 
     

@@ -5,6 +5,9 @@ import Navbar from "../../navbar/Navbar";
 import Sidebar from "../Sidebar";
 import LendsqrContext from "../../context/LendsqrContext";
 import { ReactComponent as LessThan } from "../../../assets/userDetailsSvg/lessthan.svg";
+import { ReactComponent as FirstStar } from "../../../assets/userDetailsSvg/firstStar.svg";
+import { ReactComponent as SecondStar } from "../../../assets/userDetailsSvg/secondStar.svg";
+import { ReactComponent as Naira } from "../../../assets/userDetailsSvg/naira.svg";
 import "../../../styles/UserDetails.css";
 
 function UserDetails() {
@@ -38,20 +41,26 @@ function UserDetails() {
                   <div className='activate-user'>Activate user</div>
                 </div>
               </div>
-            </div>
+            </div> 
             <div className='second-segment'>
                 <div className="first-row-wrapper">
-                  <div className="first-div"></div>
+                  <div className="first-div">
+                    <img 
+                      src={userDetails?.profile?.avatar}
+                      alt="image"
+                      className='image'
+                     />
+                  </div>
                   <div className="second-div">
-                    <p> Frank Morrison</p>
+                    <p>{userDetails?.profile.firstName} {userDetails?.profile.lastName}</p>
                     <p>Liu7687yuh9</p>
                   </div>
                   <div className="third-div">
                     <p>user tier</p>
-                    <p></p>
+                    <div><FirstStar /><SecondStar /><SecondStar /></div>
                   </div>
                   <div className="forth-div">
-                    <p>#2000000</p>
+                    <div>#{userDetails?.accountBalance}s
                     <p>providus bank</p>
                   </div>
                 </div>

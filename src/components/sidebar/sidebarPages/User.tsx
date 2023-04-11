@@ -103,7 +103,7 @@ function User() {
                   <tr className="t-row-body" key={item.id}>
                     <td className="table-data">{item?.orgName.slice(0, 15)}</td>
                     <td className="table-data user-trans">
-                      <Link to={`/user/${item.id}`} className='link'>{item?.userName}</Link>
+                      <Link to={`/user/${item.id}`} className='link'>{item?.profile.firstName}</Link>
                     </td>
                     <td className="table-data">{item?.email}</td>
                     <td className="table-data">

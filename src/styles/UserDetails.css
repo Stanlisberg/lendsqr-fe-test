@@ -68,4 +68,22 @@
 .details-component .second-segment {
   border: 1px solid brown;
   margin-top: 40px;
+}
+.details-component .second-segment .first-row-wrapper {
+  display: flex;
+  align-items: center;
+}
+.details-component .second-segment .first-row-wrapper {
+  margin-top: 20px;
+  border: 1px solid red;
+  padding: 0 25px;
+}
+.details-component .second-segment .first-row-wrapper img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #213F7D;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=UserDetails.css.map */
