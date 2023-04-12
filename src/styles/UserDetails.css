@@ -11,6 +11,13 @@
   display: flex;
   align-items: center;
 }
+.details-component .first-segment .first-row .less-than {
+  border: 1px solid black;
+  cursor: pointer;
+}
+.details-component .first-segment .first-row .less-than:hover {
+  color: #39cdcc;
+}
 .details-component .first-segment .first-row .back-text {
   padding-left: 10px;
   font-family: "Work Sans";

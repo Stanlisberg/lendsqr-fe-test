@@ -31,7 +31,7 @@ function UserDetails() {
           <div className="details-component">
             <div className="first-segment">
               <div className="first-row">
-                <LessThan />
+                <LessThan className='less-than'/>
                 <p className='back-text'>Back to Users</p>
               </div>
               <div className="second-row">

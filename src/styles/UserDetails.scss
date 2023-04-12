@@ -12,6 +12,15 @@
             display:flex;
             align-items: center;
 
+            .less-than {
+                border: 1px solid black;
+                cursor: pointer;
+
+                &:hover {
+                    color: #39cdcc;
+                }
+            }
+
             .back-text{
                 padding-left: 10px;
                 font-family: 'Work Sans';
