@@ -1,7 +1,7 @@
 import { useState, createContext, useContext } from "react";
 import axios from "axios";
 
-type LendsqrProviderProp = {
+type LendsqrProviderProp = { 
   children: React.ReactNode;
 };
 
@@ -25,7 +25,7 @@ type LendsqrContextType = {
 
 
 
-const LendsqrContext = createContext({} as LendsqrContextType);
+const LendsqrContext = createContext({} as LendsqrContextType );
 
 export const LendsqrProvider = ({ children }: LendsqrProviderProp) => {
   const [user, setUser] = useState<LendsqrStateType | null>(null);

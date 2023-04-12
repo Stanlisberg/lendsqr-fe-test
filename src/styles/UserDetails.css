@@ -74,8 +74,10 @@
   color: #39cdcc;
 }
 .details-component .second-segment {
-  border: 1px solid brown;
   margin-top: 40px;
+  background: #ffffff;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
 }
 .details-component .second-segment .first-row-wrapper {
   display: flex;
@@ -159,4 +161,18 @@
 }
 .details-component .second-segment .second-row-wrapper .child:active {
   border-bottom: 2px solid #39cdcc;
+}
+.details-component .third-segment {
+  background: #ffffff;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
+  margin-top: 25px;
+  padding: 0 0 0 24px;
+}
+.details-component .third-segment .row {
+  margin-top: 20px;
+}
+.details-component .third-segment .row .wrap-container {
+  display: flex;
+  border: 1px solid blue;
 }/*# sourceMappingURL=UserDetails.css.map */
