@@ -44,33 +44,33 @@ function UserDetails() {
             </div> 
             <div className='second-segment'>
                 <div className="first-row-wrapper">
-                  <div className="first-div">
+                  <div className="first-div ">
                     <img 
                       src={userDetails?.profile?.avatar}
                       alt="image"
                       className='image'
                      />
                   </div>
-                  <div className="second-div">
-                    <p>{userDetails?.profile.firstName} {userDetails?.profile.lastName}</p>
-                    <p>Liu7687yuh9</p>
+                  <div className="second-div  pad">
+                    <p className='full-name'>{userDetails?.profile.firstName} {userDetails?.profile.lastName}</p>
+                    <p className='account-num'>Liu7687yuh9</p>
                   </div>
-                  <div className="third-div">
-                    <p>user tier</p>
-                    <div><FirstStar /><SecondStar /><SecondStar /></div>
+                  <div className="third-div  pad">
+                    <p className='user-tier'>User Tier</p>
+                    <div className='star'><FirstStar /><SecondStar /><SecondStar /></div>
                   </div>
-                  <div className="forth-div">
-                    <div>#{userDetails?.accountBalance}s
-                    <p>providus bank</p>
+                  <div className="fourth-div  pad">
+                    <div className='account-bal'>#{userDetails?.accountBalance}</div>
+                    <p className='bvn'>{userDetails?.profile.bvn} / Providus Bank</p>
                   </div>
                 </div>
                 <div className="second-row-wrapper">
-                  <div>General Details</div>
-                  <div>Documents</div>
-                  <div>Bank Details</div>
-                  <div>Loans</div>
-                  <div>Savings</div>
-                  <div>App and System</div>
+                  <div className='child'>General Details</div>
+                  <div className='child'>Documents</div>
+                  <div className='child'>Bank Details</div>
+                  <div className='child'>Loans</div>
+                  <div className='child'>Savings</div>
+                  <div className='child'>App and System</div>
                 </div>
             </div>
             <div className='third-segment'>

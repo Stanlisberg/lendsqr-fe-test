@@ -78,6 +78,53 @@
   border: 1px solid red;
   padding: 0 25px;
 }
+.details-component .second-segment .first-row-wrapper .pad {
+  padding: 0 20px;
+}
+.details-component .second-segment .first-row-wrapper .second-div .full-name {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #213F7D;
+}
+.details-component .second-segment .first-row-wrapper .second-div .acount-num {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #545F7D;
+}
+.details-component .second-segment .first-row-wrapper .third-div {
+  border-left: 1px solid #545F7D;
+  border-right: 1px solid #545F7D;
+  padding: 10px 20px;
+}
+.details-component .second-segment .first-row-wrapper .third-div .user-tier {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  color: #545F7D;
+}
+.details-component .second-segment .first-row-wrapper .fourth-div .account-bal {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+}
+.details-component .second-segment .first-row-wrapper .fourth-div .bvn {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #213F7D;
+}
 .details-component .second-segment .first-row-wrapper img {
   border-radius: 50%;
   width: 80px;
@@ -86,4 +133,22 @@
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   -o-object-fit: contain;
      object-fit: contain;
+}
+.details-component .second-segment .second-row-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 15px 0 30px;
+}
+.details-component .second-segment .second-row-wrapper .child {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 5px 18px;
+  cursor: pointer;
+}
+.details-component .second-segment .second-row-wrapper .child:active {
+  border-bottom: 2px solid #39cdcc;
 }/*# sourceMappingURL=UserDetails.css.map */

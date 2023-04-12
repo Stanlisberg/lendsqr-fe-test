@@ -10,17 +10,17 @@ export type LendsqrStateType = {
 };
 
 type LendsqrStateType2 = {
-  profile: {};
+  profile: {}
   avatar: string
 }
 
 type LendsqrContextType = {
   user: LendsqrStateType | null;  
-  userDetails : LendsqrStateType2 | null;  
+  userDetails : LendsqrStateType2 | null | any
   setUser: React.Dispatch<React.SetStateAction<LendsqrStateType | null>>
   setUserDetails:  React.Dispatch<React.SetStateAction<LendsqrStateType2 | null>>
   getUsers: () => void
-  getUserDetails: (url: string) => void
+  getUserDetails: (url: string) => void 
 };
 
 
