@@ -14,6 +14,7 @@
 .details-component .first-segment .first-row .less-than {
   border: 1px solid black;
   cursor: pointer;
+  color: blue;
 }
 .details-component .first-segment .first-row .less-than:hover {
   color: #39cdcc;
