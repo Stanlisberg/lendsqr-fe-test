@@ -42,7 +42,7 @@ function User() {
       <div className="user-wrapper">
         <Sidebar />
         <div className="user-component">
-        <div className="user-text">User</div>
+        <div className="user-text">Users</div>
           <div className="wid-wrap">
             <div className='wid-cont'>
               <Widget status="users" />

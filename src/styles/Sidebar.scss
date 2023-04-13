@@ -11,15 +11,19 @@
 
     .sidebar-wrap {
         border-right: 1px solid rgba(0, 0, 0, 0.04);
-        margin-top:20px;
+        margin-top:45px;
     }
 
     .sidebar-top {
 
+            .sidebar-top-1 {
+                margin-top:-10px;
+                margin-bottom: -20px;
+            }
             div {
                 display: flex;
                 align-items: center;
-                margin: 35px  0;
+                margin: 0  0 30px 0;
                 padding: 6px 20px;
                 
                 &:hover {

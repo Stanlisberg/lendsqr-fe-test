@@ -26,7 +26,7 @@ function Sidebar() {
     <div className="sidebar">
       <div className="sidebar-wrap">
         <div className="sidebar-top">
-          <div>
+          <div className="sidebar-top-1">
             <FaBriefcase size="18" className="icon" />
             <span>Switch Organization</span>
             <MdKeyboardArrowDown size="25" className="icon" />

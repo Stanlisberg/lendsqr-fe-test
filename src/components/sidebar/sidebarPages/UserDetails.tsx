@@ -1,19 +1,24 @@
 import React, { CSSProperties } from "react";
 import { useEffect, useContext, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate, Navigate } from "react-router-dom";
 import Navbar from "../../navbar/Navbar";
 import Sidebar from "../Sidebar";
 import LendsqrContext from "../../context/LendsqrContext";
 import { ReactComponent as LessThan } from "../../../assets/userDetailsSvg/lessthan.svg";
 import { ReactComponent as FirstStar } from "../../../assets/userDetailsSvg/firstStar.svg";
 import { ReactComponent as SecondStar } from "../../../assets/userDetailsSvg/secondStar.svg";
-// import { ReactComponent as Naira } from "../../../assets/userDetailsSvg/naira.svg";
+import { ReactComponent as Naira } from "../../../assets/userDetailsSvg/naira.svg";
 import "../../../styles/UserDetails.css";
 
 function UserDetails() {
   const [over, setOver] = useState<boolean>(true);
   const { getUserDetails, userDetails } = useContext(LendsqrContext);
   const { details } = useParams();
+
+  const navigate = useNavigate();
+  const redirect = () => {
+    navigate('/user')
+  }
 
   useEffect(() => {
     getUserDetails(
@@ -26,7 +31,7 @@ function UserDetails() {
   const Input: CSSProperties = {
     fontWeight: "bold",
     marginLeft: "2px",
-    fontSize: "60px"
+    fontSize: "60px",
   };
 
   return (
@@ -37,13 +42,16 @@ function UserDetails() {
         <div className="user-component">
           <div className="details-component">
             <div className="first-segment">
-              <div className="first-row">
-                <LessThan
-                  className="less-than"
-                  onMouseOver={() => setOver(true)}
-                  onMouseLeave={() => setOver(false)}
-                  // style={over? {color: 'red'}: ''}
-                />
+              <div 
+                className="first-row" 
+                // onClick={() => redirect()}
+                >
+                  <LessThan
+                    className="less-than"
+                    onClick={() => redirect()}
+                    onMouseOver={() => setOver(true)}
+                    onMouseLeave={() => setOver(false)}
+                  />
                 <p className="back-text">Back to Users</p>
               </div>
               <div className="second-row">
@@ -99,51 +107,143 @@ function UserDetails() {
             <div className="third-segment">
               <div className="row">
                 <h4 className="heading">Personal Infomation</h4>
-                <div className='wrap-container'>
-                  <p>Fullname</p>
-                  <p></p>
-                  <p>Fullname</p>
-                  <p></p>
-                  <p>Fullname</p>
-                  <p></p>
-                  <p>Fullname</p>
-                  <p></p>
-                  <p>Fullname</p>
-                  <p></p>
+                <div className="wrap-container">
+                  <div className="first-wrap">
+                    <p className="p-head">Fullname</p>
+                    <p className="p-child">
+                      {userDetails?.profile.firstName}{" "}
+                      {userDetails?.profile.lastName}
+                    </p>
+                  </div>
+                  <div className="div-wrap">
+                    <p className="p-head">Phone Number</p>
+                    <p className="p-child">
+                      {userDetails?.phoneNumber.slice(2, 12)}
+                    </p>
+                  </div>
+                  <div className="div-wrap">
+                    <p className="p-head">Email Address</p>
+                    <p className="p-child">{userDetails?.email}</p>
+                  </div>
+                  <div className="div-wrap">
+                    <p className="p-head">Bvn</p>
+                    <p className="p-child">{userDetails?.profile.bvn}</p>
+                  </div>
+                  <div className="div-wrap">
+                    <p className="p-head">Gender</p>
+                    <p className="p-child">{userDetails?.profile.gender}</p>
+                  </div>
                 </div>
+                  <div className="wrap-container under">
+                    <div className="first-wrap">
+                      <p className="p-head">Marital Status</p>
+                      <p className="p-child">Single</p>
+                    </div>
+                    <div className="div-wrap">
+                      <p className="p-head">Children</p>
+                      <p className="p-child">None</p>
+                    </div>
+                    <div className="div-wrap">
+                      <p className="p-head">Type of Residence</p>
+                      <p className="p-child">{userDetails?.profile.address}</p>
+                    </div>
+                  </div>
+                
               </div>
               <div className="row">
                 <h4 className="heading">Education and Employment</h4>
-                <div className='wrap-container'>
-                  <p>Fullname</p>
-                  <p></p>
-                  <p>Fullname</p>
-                  <p></p>
-                  <p>Fullname</p>
-                  <p></p>
+                <div className="wrap-container">
+                  <div className="first-wrap">
+                    <p className="p-head">Level Of Education</p>
+                    <p className="p-child">{userDetails?.education.level}</p>
+                  </div>
+                  <div className="div-wrap">
+                    <div className="p-head">
+                      Employment <span>Status</span>
+                    </div>
+                    <p className="p-child">
+                      {userDetails?.education.employmentStatus}
+                    </p>
+                  </div>
+                  <div className="div-wrap">
+                    <p className="p-head">Sector of employment</p>
+                    <p className="p-child">{userDetails?.education.sector}</p>
+                  </div>
+                  <div className="div-wrap">
+                    <p className="p-head">Duration of Employment</p>
+                    <p className="p-child">{userDetails?.education.duration}</p>
+                  </div>
                 </div>
-              <div className="row">
-                <h4 className="heading">Socials</h4>
-                <div className='wrap-container'>
-                  <p>Twitter</p>
-                  <p></p>
-                  <p>Facebook</p>
-                  <p></p>
-                  <p>instagram</p>
-                  <p></p>
+                <div className="wrap-container under">
+                  <div className="first-wrap">
+                    <p className="p-head">Office email</p>
+                    <p className="p-child">
+                      {userDetails?.education.officeEmail}
+                    </p>
+                  </div>
+                  <div className="div-wrap">
+                    <div className="p-head">Monthly Income</div>
+                    <p className="p-child">
+                      #{userDetails?.education.monthlyIncome[0]} - #
+                      {userDetails?.education.monthlyIncome[1]}
+                    </p>
+                  </div>
+                  <div className="div-wrap">
+                    <p className="p-head">Loan repayment</p>
+                    <p className="p-child">
+                      {userDetails?.education.loanRepayment}
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="row">
-                <h4 className="heading">Guarantor</h4>
-                  <p>Fullname</p>
-                  <p></p>
-                  <p>Phone number</p>
-                  <p></p>
-                  <p>Email Address</p>
-                  <p></p>
-                  <p>Relationship</p>
-                  <p></p>
-              </div>
+                <div className="row">
+                  <h4 className="heading">Socials</h4>
+                  <div className="wrap-container under">
+                    <div className="first-wrap">
+                      <p className="p-head">Twitter</p>
+                      <p className="p-child">{userDetails?.socials.twitter}</p>
+                    </div>
+                    <div className="div-wrap">
+                      <p className="p-head">Facebook</p>
+                      <p className="p-child">{userDetails?.socials.facebook}</p>
+                    </div>
+                    <div className="div-wrap">
+                      <p className="p-head">Instagram</p>
+                      <p className="p-child">
+                        {userDetails?.socials.instagram}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <h4 className="heading">Guarantor</h4>
+                  <div className="wrap-container">
+                    <div className="first-wrap">
+                      <p className="p-head">Full name</p>
+                      <p className="p-child">
+                        {userDetails?.guarantor.firstName}{" "}
+                        {userDetails?.guarantor.lastName}
+                      </p>
+                    </div>
+                    <div className="div-wrap">
+                      <p className="p-head">Phone Number</p>
+                      <p className="p-child">
+                        {userDetails?.guarantor.phoneNumber.slice(0, 15)}
+                      </p>
+                    </div>
+                    <div className="div-wrap">
+                      <p className="p-head">Email Address</p>
+                      <p className="p-child">
+                        {userDetails?.education.officeEmail}
+                      </p>
+                    </div>
+                    <div className="div-wrap">
+                      <p className="p-head">Relationship</p>
+                      <p className="p-child">Sister</p>
+                    </div>
+                  </div>
+                </div>
+              {/* </div> */}
             </div>
           </div>
         </div>
@@ -153,3 +253,21 @@ function UserDetails() {
 }
 
 export default UserDetails;
+
+
+
+
+{/* <div className="wrap-container">
+                  <div className='div-wrap'>
+                    <p className='p-head'>Marital Status</p>
+                    <p className='p-child'>{userDetails?.phoneNumber.slice(0, 15)}</p>
+                  </div>
+                  <div className='div-wrap'>
+                    <p className='p-head'>Children</p>
+                    <p className='p-child'>{userDetails?.email}</p>
+                  </div>
+                  <div className='div-wrap'>
+                    <p className='p-head'>Residence</p>
+                    <p className='p-child'>{userDetails?.profile.bvn}</p>
+                  </div>
+                </div> */}

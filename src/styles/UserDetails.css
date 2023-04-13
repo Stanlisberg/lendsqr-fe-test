@@ -1,23 +1,21 @@
 .details-component {
   max-width: 990px;
-  border: 1px solid red;
-  margin: 0 auto 0 auto;
+  margin: -15px auto 0 auto;
   padding: 0 50px 0 50px;
-}
-.details-component .first-segment {
-  border: 1px solid blue;
 }
 .details-component .first-segment .first-row {
   display: flex;
   align-items: center;
 }
 .details-component .first-segment .first-row .less-than {
-  border: 1px solid black;
   cursor: pointer;
   color: blue;
 }
 .details-component .first-segment .first-row .less-than:hover {
-  color: #39cdcc;
+  border: 1px solid #39cdcc;
+  background: #39cdcc;
+  border-radius: 5px;
+  padding: 1px;
 }
 .details-component .first-segment .first-row .back-text {
   padding-left: 10px;
@@ -31,7 +29,7 @@
 .details-component .first-segment .second-row {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .details-component .first-segment .second-row .user-details-text {
   font-family: "Work Sans";
@@ -85,7 +83,6 @@
 }
 .details-component .second-segment .first-row-wrapper {
   margin-top: 20px;
-  border: 1px solid red;
   padding: 0 25px;
 }
 .details-component .second-segment .first-row-wrapper .pad {
@@ -167,12 +164,48 @@
   box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
   border: 0.5px solid rgba(0, 0, 0, 0.04);
   margin-top: 25px;
-  padding: 0 0 0 24px;
+  padding: 0 24px 0 24px;
 }
 .details-component .third-segment .row {
   margin-top: 20px;
 }
+.details-component .third-segment .row .heading {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #213F7D;
+}
+.details-component .third-segment .row .under {
+  border-bottom: 2px solid rgba(33, 63, 125, 0.1);
+}
 .details-component .third-segment .row .wrap-container {
   display: flex;
-  border: 1px solid blue;
+  padding-bottom: 20px;
+}
+.details-component .third-segment .row .wrap-container .first-wrap {
+  padding-top: 17px;
+  padding-right: 10px;
+}
+.details-component .third-segment .row .wrap-container .div-wrap {
+  padding: 17px 16px 0 30px;
+}
+.details-component .third-segment .row .wrap-container .p-head {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #545F7D;
+}
+.details-component .third-segment .row .wrap-container .p-child {
+  margin-top: 10px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  color: #545F7D;
 }/*# sourceMappingURL=UserDetails.css.map */
