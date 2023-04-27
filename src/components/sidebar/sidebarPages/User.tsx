@@ -1,5 +1,5 @@
-import { useContext, useEffect, useState} from "react";
-import { Link } from 'react-router-dom';
+import { useContext, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../../navbar/Navbar";
 import Sidebar from "../Sidebar";
 import Widget from "../../../widget/Widget";
@@ -22,16 +22,19 @@ function User() {
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
     setCurrentItems((user as unknown as never[])?.slice(itemOffset, endOffset));
-    setPageCount(Math.ceil((user as unknown as never[])?.length / itemsPerPage));
+    setPageCount(
+      Math.ceil((user as unknown as never[])?.length / itemsPerPage)
+    );
   }, [itemOffset, itemsPerPage, user]);
 
-  const handlePageClick = ( event: any ) => {
-    const newOffset = (event.selected * itemsPerPage) % (user as unknown as never[])?.length;
+  const handlePageClick = (event: any) => {
+    const newOffset =
+      (event.selected * itemsPerPage) % (user as unknown as never[])?.length;
     setItemOffset(newOffset);
   };
 
   // console.log(Array.isArray(user));
-  console.log(user)
+  console.log(user);
   useEffect(() => {
     getUsers();
   }, []);
@@ -42,9 +45,9 @@ function User() {
       <div className="user-wrapper">
         <Sidebar />
         <div className="user-component">
-        <div className="user-text">Users</div>
+          <div className="user-text">Users</div>
           <div className="wid-wrap">
-            <div className='wid-cont'>
+            <div className="wid-cont">
               <Widget status="users" />
               <Widget status="activeUsers" />
               <Widget status="usersWithLoans" />
@@ -52,90 +55,98 @@ function User() {
             </div>
           </div>
           <div className="table-container">
-           <div className='table-wrapper'>
-            <table className="table">
-              {user && (
-                <thead className="t-head">
-                  <tr className="t-row-head">
-                    <th className="table-head">
-                      <td>Organization</td>
-                      <td>
-                        <Menu className="menu" />
+            <div className="table-wrapper">
+              <table className="table">
+                {user && (
+                  <thead className="t-head">
+                    <tr className="t-row-head">
+                      <th className="table-head">
+                        <td>Organization</td>
+                        <td>
+                          <Menu className="menu" />
+                        </td>
+                      </th>
+                      <th className="table-head">
+                        <td>Username</td>
+                        <td>
+                          <Menu className="menu" />
+                        </td>
+                      </th>
+                      <th className="table-head">
+                        <td>Email</td>
+                        <td>
+                          <Menu className="menu" />
+                        </td>
+                      </th>
+                      <th className="table-head">
+                        <td>Phone</td>
+                        <td className="number">Number</td>
+                        <td>
+                          <Menu className="menu" />
+                        </td>
+                      </th>
+                      <th className="table-head">
+                        <td>Date</td>
+                        <td className="number">Joined</td>
+                        <td>
+                          <Menu className="menu" />
+                        </td>
+                      </th>
+                      <th className="table-head">
+                        <td>Status</td>
+                        <td>
+                          <Menu className="menu" />
+                        </td>
+                      </th>
+                    </tr>
+                  </thead>
+                )}
+                <tbody className="t-body">
+                  {(currentItems as unknown as any[])?.map((item) => (
+                    <tr className="t-row-body" key={item.id}>
+                      <td className="table-data">
+                        {item?.orgName.slice(0, 15)}
                       </td>
-                    </th>
-                    <th className="table-head">
-                      <td>Username</td>
-                      <td>
-                        <Menu className="menu" />
+                      <td className="table-data user-trans">
+                        <Link to={`/user/${item.id}`} className="link">
+                          {item?.profile.firstName}
+                        </Link>
                       </td>
-                    </th>
-                    <th className="table-head">
-                      <td>Email</td>
-                      <td>
-                        <Menu className="menu" />
+                      <td className="table-data">{item?.email}</td>
+                      <td className="table-data">
+                        {item?.phoneNumber.slice(0, 15)}
                       </td>
-                    </th>
-                    <th className="table-head">
-                      <td>Phone</td>
-                      <td className="number">Number</td>
-                      <td>
-                        <Menu className="menu" />
+                      <td className="table-data">
+                        {item?.createdAt.slice(0, 10)}
                       </td>
-                    </th>
-                    <th className="table-head">
-                      <td>Date</td>
-                      <td className="number">Joined</td>
-                      <td>
-                        <Menu className="menu" />
+                      <td className="table-data">
+                        {item?.userName.charAt(0) === ("W" || "H" || "A")
+                          ? "active"
+                          : ""}
+                        {item?.userName.charAt(0) === "J" ? "pending" : ""}
                       </td>
-                    </th>
-                    <th className="table-head">
-                      <td>Status</td>
                       <td>
-                        <Menu className="menu" />
+                        <Dotted className="dot" />
                       </td>
-                    </th>
-                  </tr>
-                </thead>
-              )}
-              <tbody className="t-body">
-                {(currentItems as unknown as any[])?.map((item) => (
-                  <tr className="t-row-body" key={item.id}>
-                    <td className="table-data">{item?.orgName.slice(0, 15)}</td>
-                    <td className="table-data user-trans">
-                      <Link to={`/user/${item.id}`} className='link'>{item?.profile.firstName}</Link>
-                    </td>
-                    <td className="table-data">{item?.email}</td>
-                    <td className="table-data">
-                      {item?.phoneNumber.slice(0, 15)}
-                    </td>
-                    <td className="table-data">{item?.createdAt.slice(0, 10)}</td>
-                    <td className="table-data">
-                      { item?.userName.charAt(0) === ('W' || 'H' || 'A') ? ('active') : ('')}
-                      { item?.userName.charAt(0) === 'J' ?  ('pending') : ('')}
-                    </td>
-                    <td>
-                      <Dotted className="dot" />
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
           <ReactPaginate
-              breakLabel="..."
-              nextLabel= {<Greater />}
-              onPageChange={handlePageClick}
-              pageRangeDisplayed={3}
-              pageCount={pageCount}
-              previousLabel={<Less />}
-              // renderOnZeroPageCount= { }
-              containerClassName="pagination"
-              pageLinkClassName="page-num"
-              previousLinkClassName="page"
-              nextLinkClassName="page"
-              activeLinkClassName="active"
+            breakLabel="..."
+            nextLabel={<Greater />}
+            onPageChange={handlePageClick}
+            pageRangeDisplayed={3}
+            pageCount={pageCount}
+            previousLabel={<Less />}
+            // renderOnZeroPageCount= { }
+            containerClassName="pagination"
+            pageLinkClassName="page-num"
+            previousLinkClassName="page"
+            nextLinkClassName="page"
+            activeLinkClassName="active"
           />
         </div>
       </div>

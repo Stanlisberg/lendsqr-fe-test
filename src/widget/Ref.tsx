@@ -1,0 +1,57 @@
+import React from 'react'
+
+export default function Ref () {
+  return (
+    <div>
+      // store.createIndex('userFirstName', ['userFirstName'])
+      // store.createIndex('user_last_name', ['user_lastName'])
+      // store.createIndex('user_avatar', ['avatar'])
+      // store.createIndex('user_account_balance', ['accountbalance'])
+      // store.createIndex('user_bvn', ['bvn'])
+      // store.createIndex('user_phone_number', ['user_phoneNumber'])
+      // store.createIndex('user_email', ['user_email'])
+      // store.createIndex('user_gender', ['gender'])
+      // store.createIndex('user_address', ['address'])
+      // store.createIndex('user_education_level', ['educationLevel'])
+      // store.createIndex('user_education_employment_status', ['employmentStatus'])
+      // store.createIndex('user_education_sector', ['educationSector'])
+      // store.createIndex('user_education_duration', ['educationDuration'])
+      // store.createIndex('user_education_email', ['educationEmail'])
+      // store.createIndex('user_education_monthly_income_low', ['monthlyIncomeLow'])
+      // store.createIndex('user_education_monthly_income_high', ['monthlyIncomeHigh'])
+      // store.createIndex('user_education_loan_repayment', ['loanRepayment'])
+      // store.createIndex('user_social_twitter',['twitter'])
+      // store.createIndex('user_social_facebook',['facebook'])
+      // store.createIndex('user_social_instagram', ['instagram'])
+      // store.createIndex('user_guarantor_first_name',['guanrantor_firstName'])
+      // store.createIndex('user_guarantor_last_name', ['guarantor_lastName'])
+      // store.createIndex('user_guarantor_phone_number', ['guarantor_phoneNumber'])
+
+      -----------------------------------------------------------------------------------
+      // const firstNameIndex = store.index('userFirstName')
+      // const lastNameIndex = store.index('userLastName') 
+      // const userAvatarIndex = store.index('avatar')
+      // const userAccountBalanceIndex = store.index('accountBalance')
+      // const userBvnIndex = store.index('bvn')
+      // const userPhoneNumberIndex = store.index('phoneNumber')
+      // const userEmailIndex = store.index('email')
+      // const userGenderIndex = store.index('gender')
+      // const userAddresssIndex = store.index('address')
+      // const userEducationLevelIndex = store.index('educationLevel')
+      // const userEducationEmploymentStatusIndex = store.index('employmentStatus')
+      // const userEducationSector = store.index('educationSector')
+      // const userEducationDurationIndex = store.index('educationDuration')
+      // const userEducationEmail = store.index('educationEmail')
+      // const userEducationMonthlyIncomeLow = store.index('monthlyLow')
+      // const userEducationMonthlyIncomeHigh = store.index('monthlyHigh')
+      // const userEducationLoanRepayment = store.index('loanRepayment')
+      // const userSocialTwitter = store.index('twitter')
+      // const userSocialFacebook = store.index('facebook')
+      // const userSocialInstagram = store.index('instagram')
+      // const userGuarantorFirstName = store.index('guarantorFirstName')
+      // const userGuarantorLastName = store.index('guarantorLastName')
+      // const userGuarantorPhoneNumber = store.index('guarantorPhoneNumber')
+    
+    </div>
+  )
+}

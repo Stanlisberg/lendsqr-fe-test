@@ -5,31 +5,31 @@ type LendsqrProviderProp = {
   children: React.ReactNode;
 };
 
-export type LendsqrStateType = {
+type LendsqrStateType = {
   item: []
 };
 
-type LendsqrStateType2 = {
-  profile: {}
-  avatar: string
-}
+// I changed the type to any so as to explore it usage
+// type LendsqrStateType2 = {
+//  userDetails: any;
+// }
 
 type LendsqrContextType = {
   user: LendsqrStateType | null;  
-  userDetails : LendsqrStateType2 | null | any
+  userDetails :  null | any
   setUser: React.Dispatch<React.SetStateAction<LendsqrStateType | null>>
-  setUserDetails:  React.Dispatch<React.SetStateAction<LendsqrStateType2 | null>>
+  setUserDetails:  React.Dispatch<React.SetStateAction< any | null>>
   getUsers: () => void
   getUserDetails: (url: string) => void 
 };
-
 
 
 const LendsqrContext = createContext({} as LendsqrContextType );
 
 export const LendsqrProvider = ({ children }: LendsqrProviderProp) => {
   const [user, setUser] = useState<LendsqrStateType | null>(null);
-  const [ userDetails , setUserDetails] = useState<LendsqrStateType2 | null>(null);
+  const [ userDetails , setUserDetails] = useState<any | null>(null);
+
 
   const getUsers = async () => {
     const response = await axios.get(
@@ -38,7 +38,6 @@ export const LendsqrProvider = ({ children }: LendsqrProviderProp) => {
 
     const userResponse = response.data;
     setUser(userResponse);
-    
   };
 
   const getUserDetails = async (url: string) => {
@@ -46,8 +45,7 @@ export const LendsqrProvider = ({ children }: LendsqrProviderProp) => {
     const userResponse = response.data;
 
     setUserDetails(userResponse);
-
-    console.log(userResponse.data)
+    // console.log(userResponse)
   }
 
 
