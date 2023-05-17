@@ -9,7 +9,7 @@ type LendsqrStateType = {
   item: []
 };
 
-// I changed the type to any so as to explore it usage
+//...........I changed the type to any so as to explore it usage............
 // type LendsqrStateType2 = {
 //  userDetails: any;
 // }

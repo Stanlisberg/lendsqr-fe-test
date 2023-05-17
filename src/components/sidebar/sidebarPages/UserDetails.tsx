@@ -19,6 +19,11 @@ function UserDetails() {
     navigate("/user");
   };
 
+  //-----------Testing typescript destruturing
+    // let point: [number, number] = [1, 2];
+    // let [x, y] = point;
+    // console.log(x, y);
+    
   //---------useState for  testing the click button
   const [over, setOver] = useState<boolean>(true);
 
@@ -91,8 +96,8 @@ function UserDetails() {
       store.put({ id: 11, employmentStatus: `${userDetails?.education.employmentStatus}`});
       store.put({ id: 12, educationSector: `${userDetails?.education.sector}`});
       store.put({ id: 13, educationDuration: `${userDetails?.education.duration}`});
-      store.put({id: 14, educationEmail: `${userDetails?.education.officeEmail}`});
-      store.put({id: 15, monthlyLow: `${userDetails?.education.monthlyIncome[0]}`});
+      store.put({ id: 14, educationEmail: `${userDetails?.education.officeEmail}`});
+      store.put({ id: 15, monthlyLow: `${userDetails?.education.monthlyIncome[0]}`});
       store.put({ id: 16, monthlyHigh: `${userDetails?.education.monthlyIncome[1]}`,});
       store.put({ id: 17, loanRepayment: `${userDetails?.education.loanRepayment}`});
       store.put({ id: 18, twitter: `${userDetails?.socials.twitter}` });

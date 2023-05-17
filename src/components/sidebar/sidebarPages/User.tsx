@@ -21,7 +21,7 @@ function User() {
 
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
-    setCurrentItems((user as unknown as never[])?.slice(itemOffset, endOffset));
+    setCurrentItems((user as unknown as any)?.slice(itemOffset, endOffset));
     setPageCount(
       Math.ceil((user as unknown as never[])?.length / itemsPerPage)
     );
@@ -60,44 +60,44 @@ function User() {
                 {user && (
                   <thead className="t-head">
                     <tr className="t-row-head">
-                      <th className="table-head">
-                        <td>Organization</td>
-                        <td>
+                      <td className="table-head">
+                        <div>Organization</div>
+                        <div>
                           <Menu className="menu" />
-                        </td>
-                      </th>
-                      <th className="table-head">
-                        <td>Username</td>
-                        <td>
+                        </div>
+                      </td>
+                      <td className="table-head">
+                        <div>Username</div>
+                        <div>
                           <Menu className="menu" />
-                        </td>
-                      </th>
-                      <th className="table-head">
+                        </div>
+                      </td>
+                      <td className="table-head">
                         <td>Email</td>
                         <td>
                           <Menu className="menu" />
                         </td>
-                      </th>
-                      <th className="table-head">
+                      </td>
+                      <td className="table-head">
                         <td>Phone</td>
                         <td className="number">Number</td>
                         <td>
                           <Menu className="menu" />
                         </td>
-                      </th>
-                      <th className="table-head">
+                      </td>
+                      <td className="table-head">
                         <td>Date</td>
                         <td className="number">Joined</td>
                         <td>
                           <Menu className="menu" />
                         </td>
-                      </th>
-                      <th className="table-head">
+                      </td>
+                      <td className="table-head">
                         <td>Status</td>
                         <td>
                           <Menu className="menu" />
                         </td>
-                      </th>
+                      </td>
                     </tr>
                   </thead>
                 )}
