@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/Sidebar.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import {
   FaBriefcase,
   FaHome,
